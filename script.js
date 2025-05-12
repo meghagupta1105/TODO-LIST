@@ -22,7 +22,8 @@ addTaskBtn.addEventListener("click", () => {
 function showTasks() {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   taskList.innerHTML = "";
-
+  
+  console.log(tasks)
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
     li.textContent = task;
