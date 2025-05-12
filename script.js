@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", showTasks);
 
 addTaskBtn.addEventListener("click", () => {
   const taskText = taskInput.value.trim();
-  
+  console.log(taskText)
   if (taskText !== "") {
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     tasks.push(taskText);
