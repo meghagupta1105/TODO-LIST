@@ -22,7 +22,7 @@ addTaskBtn.addEventListener("click", () => {
 function showTasks() {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   taskList.innerHTML = "";
-  
+  console.log("insert new comment")
   console.log(tasks)
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
