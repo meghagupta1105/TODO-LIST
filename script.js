@@ -16,6 +16,7 @@ addTaskBtn.addEventListener("click", () => {
     taskInput.value = "";
     showTasks();
   }
+  console.log(taskText)
 });
 
 
